@@ -16,7 +16,8 @@ class Config:
             'lang_search',
             'lang_interface',
             'ctry',
-            'dark'
+            'dark',
+            'num'
         ]
 
         for key, value in kwargs.items():
