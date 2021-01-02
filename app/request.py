@@ -89,6 +89,9 @@ def gen_query(query, args, config, near_city=None) -> str:
     # Pass along type of results (news, images, books, etc)
     if 'tbm' in args:
         param_dict['tbm'] = '&tbm=' + args.get('tbm')
+    
+    if 'num' in args:
+        param_dict['num'] = '&num=' + args.get('num')
 
     # Get results page start value (10 per page, ie page 2 start val = 20)
     if 'start' in args:
